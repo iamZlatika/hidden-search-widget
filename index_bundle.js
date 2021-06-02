@@ -12905,9 +12905,10 @@ const App = () => {
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: `search ${active ? "active" : ""}`,
+    className: `search ${active ? "active" : ""}`
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_input_Input__WEBPACK_IMPORTED_MODULE_2__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_button_Button__WEBPACK_IMPORTED_MODULE_1__.default, {
     onClick: toggleActive
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_input_Input__WEBPACK_IMPORTED_MODULE_2__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_button_Button__WEBPACK_IMPORTED_MODULE_1__.default, null));
+  }));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
@@ -12932,9 +12933,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const Button = () => {
+const Button = ({
+  onClick
+}) => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    className: "btn"
+    className: "btn",
+    onClick: onClick
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faSearch
   }));

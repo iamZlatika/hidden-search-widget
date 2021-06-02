@@ -10,9 +10,9 @@ const App = () => {
   };
 
   return (
-    <div className={`search ${active ? "active" : ""}`} onClick={toggleActive}>
+    <div className={`search ${active ? "active" : ""}`} >
       <Input />
-      <Button />
+      <Button onClick={toggleActive}/>
     </div>
   );
 };
